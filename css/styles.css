@@ -82,7 +82,7 @@ font-family: "Raleway", sans-serif;
     display: flex;
     gap: 40px;
 }
-.nav-ul-studio-a{
+.nav-ul-link{
 
         font-weight: 500;
         font-size: 16px;
@@ -93,13 +93,36 @@ font-family: "Raleway", sans-serif;
         display: block;
 
 }
-.nav-ul-studio-a:hover {
+
+
+.nav-ul-link:hover {
     color: #404bbf;
 }
 
-.nav-ul-studio-a:focus {
+.nav-ul-link:focus {
     color: #404bbf;
 }
+
+/* ??????????? */
+    .current {
+            position: relative;
+            color: #404bbf;
+        }
+    
+        .nav-ul-link.current:active::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 20px;
+            display: block;
+            width: 48px;
+            height: 4;
+            border-radius: 2px;
+            background-color: #404bbf;
+        }
+
+/* ------------------- */
+
 
     .address{
         font-style: normal;
@@ -131,11 +154,14 @@ font-family: "Raleway", sans-serif;
 /* section 1 */
 .main-section-oun{
     background: #2e2f42;
+    background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office\ 1-min.jpg);
     padding: 188px 0;
-    
-
-   
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+     
 }
+
 .conteiner-button{
 
     
@@ -215,8 +241,23 @@ gap: 24px;
 }
 .advantages-item{
 width: calc((100% - 72px) / 4);
-}
 
+}
+/* -------------------- */
+.advantages-icon{
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    width: 264px;
+    height: 112px;
+    background-color: #f4f4fd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color;
+    margin-bottom: 8px;
+/* ---------------------- */
+
+}
 
 .title-strategy{
 
@@ -268,6 +309,27 @@ width: calc((100% - 72px) / 4);
             
         
 }
+.icons-list{
+
+}
+
+.icons-mark{
+
+
+
+}
+
+.icons-item{
+
+}
+
+.icons-link{
+    display: flex;
+        align-items: center;
+        justify-content: center;
+}
+
+
 .conteiner-card{
 padding: 32px 0;
 }
