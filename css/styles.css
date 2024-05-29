@@ -103,25 +103,27 @@ font-family: "Raleway", sans-serif;
     color: #404bbf;
 }
 
-/* ??????????? */
+
     .current {
             position: relative;
             color: #404bbf;
         }
     
-        .nav-ul-link.current:active::after {
-            content: '';
-            position: absolute;
-            left: 0;
-            bottom: 20px;
-            display: block;
-            width: 48px;
-            height: 4;
-            border-radius: 2px;
-            background-color: #404bbf;
-        }
 
-/* ------------------- */
+        
+
+                .current::after {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    bottom: -1px;
+                    width: 100%;
+                    display: block;
+                    height: 4px;
+                    border-radius: 2px;
+                    background-color: #404BBF;
+                }
+
 
 
     .address{
@@ -243,7 +245,7 @@ gap: 24px;
 width: calc((100% - 72px) / 4);
 
 }
-/* -------------------- */
+
 .advantages-icon{
     border: 1px solid #8e8f99;
     border-radius: 4px;
@@ -255,7 +257,7 @@ width: calc((100% - 72px) / 4);
     justify-content: center;
     transition: background-color;
     margin-bottom: 8px;
-/* ---------------------- */
+
 
 }
 
@@ -303,30 +305,42 @@ width: calc((100% - 72px) / 4);
         background: #fff;
         text-align: center;
         border-radius: 0 0 4px 4px;
-           
         width: calc((100% - 72px) / 4);
-            
+        box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.16), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08)  
             
         
 }
 .icons-list{
 
+        display: flex;
+        gap: 4px;
+        flex-shrink: 0;
+        align-self: flex-end;
+        
 }
 
-.icons-mark{
+.icons{
+
+display: flex;
+justify-content: center;
+gap: 24px;
 
 
 
 }
 
 .icons-item{
+width: 40px;
+height: 40px;
+border-radius: 50%;
+    background-color: #03a9f4;
 
+   
 }
 
 .icons-link{
-    display: flex;
-        align-items: center;
-        justify-content: center;
+width: 100%;
+fill: #f4f4fd;
 }
 
 
