@@ -106,8 +106,10 @@ font-family: "Raleway", sans-serif;
 
 
     .current {
+        color: #404bbf;
+        transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1);
             position: relative;
-            color: #404bbf;
+            
         }
     
 
@@ -134,6 +136,7 @@ font-family: "Raleway", sans-serif;
     }
     .address-info{
         color: #434455;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
         .address-info:hover{
             color: #404bbf;
@@ -157,7 +160,10 @@ font-family: "Raleway", sans-serif;
 /* section 1 */
 .main-section-oun{
     background: #2e2f42;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/img-name.jpeg);
     background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office\ 1-min.jpg);
+   
+    
     padding: 188px 0;
     background-repeat: no-repeat;
     background-position: center center;
