@@ -563,10 +563,5 @@ border-top: none;
 .icons-link-footer:focus {
     background-color: #31d0aa;
 }
-.icon-footer{
-    width: 20px;
-        height: 20px;
-        position: absolute;
-        fill: #f4f4fd;
-}
+
 
