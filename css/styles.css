@@ -472,7 +472,8 @@ border-top: none;
 /* Footer */
 
 .footer-conteiner{
-    
+    display: flex;
+    align-items: baseline;
     
 }
 
@@ -484,9 +485,10 @@ border-top: none;
 
 }
 
-
+.footer-logo-text{
+    margin-right: 120px;
+}
 .footer-text{
-
         font-weight: 400;
         font-size: 16px;
         line-height: 150%;
@@ -494,7 +496,6 @@ border-top: none;
         color: #f4f4fd;
         
         width: 264px;
-       
         
 }
 
@@ -512,6 +513,15 @@ border-top: none;
 }
 .logo-web-f{
     color: #f4f4fd;
+}
+
+.social-media-footer{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0.02em;
+        color: #fff;
+        margin-bottom: 16px;
 }
 
 
